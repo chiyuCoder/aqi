@@ -2,14 +2,14 @@ var sinoMap = echarts.init(document.getElementById("chinaMap")),
     option,
     cities = [];
 sinoMap.showLoading();
-$.get("../data/cities-aqi.json",function (cityAqi) {
+$.get("../aqi/data/cities-aqi.json",function (cityAqi) {
     //城市空气质量
     for (var ca = 0; ca < cityAqi.length; ca ++) {
         cities[ca] = new Object();
         cities[ca].name = cityAqi[ca].area;
         cities[ca].value = [cityAqi[ca].quality,cityAqi[ca].level,cityAqi[ca].aqi,cityAqi[ca].primary_pollutant]
     }
-    $.get("../data/china-cities.json",function (sinoCityData) {
+    $.get("../aqi/data/china-cities.json",function (sinoCityData) {
         //城市坐标
         var sinoCity = sinoCityData.features;
         for (var cc = 0; cc < sinoCity.length; cc ++) {
