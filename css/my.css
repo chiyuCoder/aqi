@@ -1,10 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eeb8ad3a6eeae834d80ee58b9828e38973e51dac
 *{list-style: none;font-family: "Microsoft Yahei";margin:0;padding: 0;border:0;}
 .acb:after{content: "";display: block;height:0;clear:both;}
 .acb .fl{float: left;}
 .acb .fr{float: right;}
 .bigfont{font-size: 24px;margin-left:50px;}
 .smallfont{font-size: 12px;}
+<<<<<<< HEAD
 #chinaMap{width:80%;margin:0 auto;height:600px;background: wheat;}
 =======
 /*预设--*/
@@ -16,3 +20,6 @@
 /*--预设*/
 #china-map{width:80%;height:600px;margin:0 auto;background: wheat;}
 >>>>>>> youhua
+=======
+#chinaMap{width:80%;margin:0 auto;height:600px;background: wheat;}
+>>>>>>> eeb8ad3a6eeae834d80ee58b9828e38973e51dac
