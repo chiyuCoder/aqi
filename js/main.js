@@ -7,7 +7,7 @@ requirejs(["jquery","china","echarts","../drawmap"],function ($,sino,echarts,dra
     //获取数据
     var cities = [];
     SINOMAP.showLoading();
-    $.get("../data/cities-aqi.json",function (cityAqi) {//获取城市空气质量
+    $.get("https://sin-iti.github.io/aqi/data/cities-aqi.json",function (cityAqi) {//获取城市空气质量
         for (var NoSenseA = 0; NoSenseA < cityAqi.length; NoSenseA ++) {
             cities[NoSenseA] = new Object();
             cities[NoSenseA].name = cityAqi[NoSenseA].area;
