@@ -7,7 +7,7 @@ requirejs(["jquery","china","echarts","../drawmap"],function ($,sino,echarts,dra
     //获取数据
     var cities = [];
     SINOMAP.showLoading();
-    $.get("../data/cities-aqi.json",function (cityAqi) {//获取城市空气质量
+    $.get("https://sin-iti.github.io/aqi/data/cities-aqi.json",function (cityAqi) {//获取城市空气质量
         for (var NoSenseA = 0; NoSenseA < cityAqi.length; NoSenseA ++) {
             cities[NoSenseA] = new Object();
             cities[NoSenseA].name = cityAqi[NoSenseA].area;
@@ -18,7 +18,7 @@ requirejs(["jquery","china","echarts","../drawmap"],function ($,sino,echarts,dra
                 cityAqi[NoSenseA].primary_pollutant
             ]
         }
-        $.get("../data/china-cities.json",function (sinoCityData) {//获取城市坐标
+        $.get("https://sin-iti.github.io/aqi/data/china-cities.json",function (sinoCityData) {//获取城市坐标
             var sinoCity = sinoCityData.features;
             for (var IndexCityCoordinate = 0; 
                  IndexCityCoordinate < sinoCity.length; 
