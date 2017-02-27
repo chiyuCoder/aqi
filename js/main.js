@@ -18,7 +18,7 @@ requirejs(["jquery","china","echarts","../drawmap"],function ($,sino,echarts,dra
                 cityAqi[NoSenseA].primary_pollutant
             ]
         }
-        $.get("../data/china-cities.json",function (sinoCityData) {//获取城市坐标
+        $.get("https://sin-iti.github.io/aqi/data/china-cities.json",function (sinoCityData) {//获取城市坐标
             var sinoCity = sinoCityData.features;
             for (var IndexCityCoordinate = 0; 
                  IndexCityCoordinate < sinoCity.length; 
